@@ -27,6 +27,8 @@ or Download project as zip (preferred)
 - Open Assets -> Scenes -> <Scene_Name>
 - Import ARFoundation, ARCore and ARKit from Unity package manager.
 
+# Try it out
+Install the [APK](https://github.com/HeavyScam/FurnitAR-Unity/tree/main/Build) to run on compatible devices
 
 # Contributors
 <table>
