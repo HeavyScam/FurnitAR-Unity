@@ -28,7 +28,19 @@ or Download project as zip (preferred)
 - Import ARFoundation, ARCore and ARKit from Unity package manager.
 
 # Screenshots
-These are from the [web version](https://furnitar.onrender.com), not the Android app. It uses the same sofa and desk models.
+## Android app
+Captured from the APK in an Android emulator, which has no AR camera. On a phone, the camera view fills the black area.
+
+<p align="center">
+  <img src="web/public/screenshots/app-home.png" width="150" alt="FurnitAR Android app: Home">
+  <img src="web/public/screenshots/app-start.png" width="150" alt="FurnitAR Android app: Measure or view">
+  <img src="web/public/screenshots/app-furniture.png" width="150" alt="FurnitAR Android app: Choose furniture">
+  <img src="web/public/screenshots/app-measure.png" width="150" alt="FurnitAR Android app: Choose what to measure">
+  <img src="web/public/screenshots/app-markers.png" width="150" alt="FurnitAR Android app: Place measuring markers">
+</p>
+
+## Web version
+From the [web version](https://furnitar.onrender.com), showing the sofa and desk models the Android app places in your camera view.
 
 <p align="center">
   <img src="web/public/screenshots/web-sofa.jpg" width="240" alt="The sofa in View mode in the FurnitAR web version">
