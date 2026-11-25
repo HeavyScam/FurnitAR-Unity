@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>FurnitAR</title>
+<meta name="description" content="Measure a space and see a sofa or desk in it at life size, in your browser or in augmented reality on Android.">
+<meta name="theme-color" content="#dce3e6">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="module" src="/src/main.js"></script>
+</head>
+<body>
+<main>
+  <section class="stage" aria-label="Furniture room">
+    <canvas id="room" aria-label="3D room. Drag to look around. Use the controls below to change furniture or measure."></canvas>
+    <div id="overlay">
+      <header class="bar">
+        <a class="mark" href="/">FurnitAR</a>
+        <a class="get" href="#app">Get the Android app</a>
+      </header>
+      <div class="lede">
+        <h1>Will it fit?<br>Measure, then look.</h1>
+        <p id="hint" role="status">Loading the furniture…</p>
+      </div>
+      <div class="dock">
+        <div class="seg" role="group" aria-label="Mode">
+          <button data-mode="view" aria-pressed="true">View</button>
+          <button data-mode="measure" aria-pressed="false">Measure</button>
+        </div>
+        <div class="seg" role="group" aria-label="Furniture">
+          <button data-item="sofa" aria-pressed="true">Sofa</button>
+          <button data-item="desk" aria-pressed="false">Desk</button>
+        </div>
+        <div class="read">
+          <output id="value"></output>
+          <span id="note"></span>
+        </div>
+        <button class="plain" id="unit">Show cm</button>
+        <button class="plain" id="turn">Turn</button>
+        <button class="go" id="ar" hidden>Place in my room</button>
+        <button class="go" id="exit" hidden>Exit AR</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="app" id="app">
+    <div>
+      <h2>The Android app</h2>
+      <p>The original FurnitAR build, made with Unity and ARCore. It finds floors and tables through the camera, measures between two points by tap and drag, and places the sofa or desk where you tap.</p>
+      <a class="dl" href="/FurnitAR.apk" download>Download FurnitAR.apk <small>24 MB</small></a>
+      <details>
+        <summary>Check the download</summary>
+        <p>SHA-256</p>
+        <code>80448a9d64149d102b3dc694a501419124d937d1427f6ca9d4f9e3bfc8da785b</code>
+      </details>
+    </div>
+    <ol class="steps">
+      <li>Use a phone with Android 8 or newer that supports <a href="https://developers.google.com/ar/devices">ARCore</a>.</li>
+      <li>Open the APK. Android asks you to allow installs from your browser, because it comes from outside the Play Store.</li>
+      <li>Allow the camera, then move the phone slowly until the floor is detected.</li>
+    </ol>
+  </section>
+
+  <section class="more">
+    <div>
+      <h2>Have your dimensions?</h2>
+      <p>The app’s Buy Now button opens the FurnitAR shop. You can go straight there.</p>
+      <a href="https://furnitar-front.vercel.app/" rel="noopener">Open the FurnitAR shop</a>
+    </div>
+    <div>
+      <h2>Made by Heavy Scam</h2>
+      <p class="team"><a href="https://github.com/divit-agrawal">Divit Agrawal</a><a href="https://github.com/Thamanmuthappa">Thaman Muthappa M N</a><a href="https://github.com/rishimalgwa">Rishi Malgwa</a><a href="https://github.com/NeelGhoshal">Neel Ghoshal</a></p>
+      <a href="https://github.com/HeavyScam/FurnitAR-Unity">Source on GitHub</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>
