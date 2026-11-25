@@ -64,6 +64,13 @@ code { font-size: 0.85rem; overflow-wrap: anywhere; }
 .steps { margin: 0; padding: 0 0 0 1.4em; display: grid; gap: 1.1em; align-content: center; max-width: 46ch; }
 .steps li::marker { font: 600 1.25rem var(--rule); color: var(--tape); }
 
+.shots { padding: clamp(48px, 7vw, 88px) var(--side) 0; }
+.shots p { max-width: 52ch; }
+.shot-row { display: grid; grid-template-columns: repeat(3, minmax(0, 300px)); gap: clamp(16px, 3vw, 40px); margin-top: 28px; }
+figure { margin: 0; }
+figure img { display: block; width: 100%; height: auto; border-radius: 14px; }
+figcaption { margin-top: 10px; }
+
 .more { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(32px, 6vw, 96px); padding: clamp(48px, 7vw, 88px) var(--side); }
 .more p { max-width: 46ch; }
 .team { display: grid; gap: 2px; justify-items: start; }
@@ -73,6 +80,7 @@ code { font-size: 0.85rem; overflow-wrap: anywhere; }
 
 @media (max-width: 760px) {
   .app, .more { grid-template-columns: 1fr; }
+  .shot-row { grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 68%; overflow-x: auto; padding-bottom: 12px; }
   .dock { gap: 8px 10px; padding-inline: 12px; }
   .seg { flex: 1 0 auto; }
   .seg button { flex: 1; padding: 0 8px; }

@@ -27,7 +27,17 @@ or Download project as zip (preferred)
 - Open Assets -> Scenes -> <Scene_Name>
 - Import ARFoundation, ARCore and ARKit from Unity package manager.
 
+# Screenshots
+These are from the [web version](https://furnitar.onrender.com), not the Android app. It uses the same sofa and desk models.
+
+<p align="center">
+  <img src="web/public/screenshots/web-sofa.jpg" width="240" alt="The sofa in View mode in the FurnitAR web version">
+  <img src="web/public/screenshots/web-desk.jpg" width="240" alt="The desk in View mode in the FurnitAR web version">
+  <img src="web/public/screenshots/web-measure.jpg" width="240" alt="Measuring the floor in front of the sofa in the FurnitAR web version">
+</p>
+
 # Try it out
+Open the [web version](https://furnitar.onrender.com) in a browser, or
 Install the [APK](https://github.com/HeavyScam/FurnitAR-Unity/tree/main/Build) to run on compatible devices
 
 # Contributors
